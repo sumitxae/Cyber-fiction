@@ -585,36 +585,56 @@ function locoScroll(){
     
 }
 
+function pagePin(){
+    gsap.to("#page1",{
+        scrollTrigger:{
+            trigger: "#page1",
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            scroller : "#main",
+            // markers: true
+        }
+    })
+    gsap.to("#page2",{
+        scrollTrigger:{
+            trigger: "#page2",
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            scroller : "#main",
+            // markers: true
+        }
+    })
+    gsap.to("#page3",{
+        scrollTrigger:{
+            trigger: "#page3",
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            scroller : "#main",
+            // markers: true
+        }
+    })
+}
+
+function loaderAnim(){
+    // Gsap LOader Animation
+    gsap.to("#loader img",{
+        rotate: 360,
+        duration: 2,
+        repeat: -1
+    })
+    gsap.to("#loader",{
+        opacity: 0,
+        duration: 2
+    })
+}
+
+// function
+
+
 locoScroll();
 canvas();
-
-gsap.to("#page1",{
-    scrollTrigger:{
-        trigger: "#page1",
-        start: "top top",
-        end: "bottom top",
-        pin: true,
-        scroller : "#main",
-        // markers: true
-    }
-})
-gsap.to("#page2",{
-    scrollTrigger:{
-        trigger: "#page2",
-        start: "top top",
-        end: "bottom top",
-        pin: true,
-        scroller : "#main",
-        // markers: true
-    }
-})
-gsap.to("#page3",{
-    scrollTrigger:{
-        trigger: "#page3",
-        start: "top top",
-        end: "bottom top",
-        pin: true,
-        scroller : "#main",
-        // markers: true
-    }
-})
+pagePin();
+loaderAnim();

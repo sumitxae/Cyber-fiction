@@ -12,6 +12,20 @@ html,body{
     position: relative;
     overflow: hidden;
 }
+#loader{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    background-color: white;
+    transition: all ease;
+    justify-content: center;
+}
+#loader img{
+    height: 13%;
+}
 canvas{
     overflow: auto;
     position: relative;
@@ -29,13 +43,36 @@ canvas{
     /* background-color: red; */
 }
 #nav{
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 999;
     font-size: 3rem;
     height: 10vh;
-    font-family: urban;
+    font-family: urbanist;
     width: 100vw;
-    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    word-spacing: -0.45rem;
+}   
+#nav span{
+    font-weight: 100;
+}
+#links{
+    height: inherit;
+    width: 13%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#links img{
+    height: 33%;
 }
 #page1{
     height: 100vh;
