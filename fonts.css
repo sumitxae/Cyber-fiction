@@ -1,0 +1,16 @@
+@font-face {
+    font-family: noto;
+    src: url(./Fonts/noto.otf);
+}
+@font-face {
+    font-family: awesome;
+    src: url(./Fonts/Font\ awesome.otf);
+}
+@font-face {
+    font-family: urban;
+    src: url(./Fonts/Urbanist.otf);
+}
+@font-face {
+    font-family: urban2;
+    src: url(./Fonts/Urbanist-2.otf);
+}
