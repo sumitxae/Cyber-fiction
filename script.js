@@ -596,7 +596,31 @@ function pagePin(){
             scroller: "#main",
         },
     });
+    
+    function mintPin(){
+                // Get the offset position of the "#mint" element
+        const mintElement = document.querySelector("#mint");
+        const mintOffset = mintElement.offsetTop;
 
+        // Calculate the end value for the scrollTrigger based on the offset position
+        const windowHeight = window.innerHeight;
+        const endValue = mintOffset - windowHeight;
+
+        // Apply the scrollTrigger with the calculated end value
+        gsap.to("#mint", {
+            scrollTrigger: {
+                trigger: "#mint",
+                start: "top top",
+                end: endValue,
+                pin: true,
+                pinSpacing: false,
+                scroller: "#main",
+            },
+        });
+
+    }
+
+    mintPin();
     gsap.to("#page1",{
         scrollTrigger:{
             trigger: "#page1",

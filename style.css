@@ -125,7 +125,7 @@ canvas{
     align-items: center;
     padding: 0 4.5vw;
     font-family: urbanist;
-    font-size: 0.9rem;
+    font-size: 0.98rem;
     justify-content: space-between;
 }
 .part-intro{
@@ -149,11 +149,12 @@ canvas{
     position: absolute;
     /* background-color: #111; */
     height: 9vh;
+    z-index: 999;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 86%;
+    top: 85%;
     left: 75%;
 }
 #box{
