@@ -82,7 +82,7 @@ canvas{
     font-size:6.3rem;
     font-weight: 100;
     white-space: nowrap;
-    top: 27%;
+    top: 23.5%;
     letter-spacing: 0px;
     font-family: urbanist;
     overflow-x: hidden;
@@ -114,6 +114,83 @@ canvas{
     -webkit-text-stroke: 1.2px #fff;
     color: transparent;
 }
+
+#intro{
+    height: 10vh;
+    width: 100%;
+    /* background-color: lightsalmon; */
+    position: absolute;
+    top: 57%;
+    display: flex;
+    align-items: center;
+    padding: 0 4.5vw;
+    font-family: urbanist;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+.part-intro{
+    /* background-color: blue; */
+    height: 100%;
+    width: 38%;
+    color: #ffffffde;
+    line-height: 1.5rem;
+}
+.part-intro h4{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.part-intro:first-child{
+    text-align: left;
+}
+.part-intro:last-child{
+    text-align: right;
+}
+#mint{
+    position: absolute;
+    /* background-color: #111; */
+    height: 9vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 86%;
+    left: 75%;
+}
+#box{
+    border-radius: 1.5rem;
+    height: 100%;
+    width: 80%;
+    background-color: #111;
+    overflow: hidden;
+    z-index: 97;
+    display: flex;
+    align-items: center;
+    color: #ffffffde;
+    font-family: urbanist;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1.2px #ffffffde;
+    justify-content: center;
+}
+#mint #img{
+    /* background-color: red; */
+    height: 100%;
+    z-index: 98;
+    margin-left: 10px;
+    width: 20%;
+}
+#img img{
+    margin-left: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 #page1{
     height: 100vh;
