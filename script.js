@@ -586,6 +586,17 @@ function locoScroll(){
 }
 
 function pagePin(){
+    gsap.to("#nav", {
+        scrollTrigger: {
+            trigger: "#nav",
+            start: "top top",
+            end: "+=1500%", // Adjust the value as needed
+            pin: true,
+            pinSpacing: false, // Set to true if you want to maintain spacing during pinning
+            scroller: "#main",
+        },
+    });
+
     gsap.to("#page1",{
         scrollTrigger:{
             trigger: "#page1",
@@ -631,10 +642,20 @@ function loaderAnim(){
     })
 }
 
-// function
+function scrollerAnim(){
+    gsap.to(".elem",{
+        x: "-100%",
+        duration: 22,
+        repeat: -1,
+        ease: "none"
+    })
+}
+
+
 
 
 locoScroll();
 canvas();
 pagePin();
 loaderAnim();
+scrollerAnim();

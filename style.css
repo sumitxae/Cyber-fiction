@@ -43,7 +43,7 @@ canvas{
     /* background-color: red; */
 }
 #nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 999;
     font-size: 3rem;
@@ -74,23 +74,64 @@ canvas{
 #links img{
     height: 33%;
 }
+
+#scroller{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    font-size:6.3rem;
+    font-weight: 100;
+    white-space: nowrap;
+    top: 27%;
+    letter-spacing: 0px;
+    font-family: urbanist;
+    overflow-x: hidden;
+    color: white;
+}
+#scroller h1{
+    display: inline-block;
+    letter-spacing: -5px;
+    font-weight: 100;
+}
+.cbr{
+    letter-spacing: 0.5rem;
+    -webkit-text-stroke: 8px #fff;
+}
+.fct{
+    font-family: urbanist;
+    margin-left: -1rem;
+    font-weight: 100;
+}
+.stroke{
+    font-family: gilroy;
+    font-weight: 100;
+    -webkit-text-stroke: 1.2px #fff;
+    color: transparent;
+}
+.ur{
+    font-family: gilroy;
+    font-style: italic;
+    -webkit-text-stroke: 1.2px #fff;
+    color: transparent;
+}
+
 #page1{
     height: 100vh;
     position: relative;
     width: 100vw;
     background-image: url("https://cyberfiction.io/sequence/0439.png");
-    background-color: blue;
+    /* background-color: blue; */
 }
 #page2{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: green;
+    /* background-color: green; */
 }
 #page3{
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
