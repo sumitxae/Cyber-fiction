@@ -149,7 +149,7 @@ canvas{
     position: absolute;
     /* background-color: #111; */
     height: 9vh;
-    z-index: 999;
+    z-index: 99;
     width: 20%;
     display: flex;
     align-items: center;
@@ -185,14 +185,6 @@ canvas{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
 #page1{
     height: 100vh;
     position: relative;
@@ -200,11 +192,50 @@ canvas{
     background-image: url("https://cyberfiction.io/sequence/0439.png");
     /* background-color: blue; */
 }
+
+
 #page2{
     position: relative;
     height: 100vh;
     width: 100vw;
     /* background-color: green; */
+}
+#p2d{
+    position: relative;
+    height: 60vh;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: urbanist;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    padding: 0 5vw;
+    -webkit-text-stroke: 1px #ffffffde;
+    color: white;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: space-between;
+}
+#p2d p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+#dg2:first-child{
+    align-self: flex-start;
+    height: 60%;
+    line-height: 4rem;
+    width: 34%;
+    /* background-color: red; */
+}
+#dg2:last-child{
+    line-height: 4rem;
+    height: 60%;
+    align-self: flex-end;
+    /* height: 80%; */
+    width: 30%;
+    text-align: right;
+    /* background-color: red; */
 }
 #page3{
     height: 100vh;

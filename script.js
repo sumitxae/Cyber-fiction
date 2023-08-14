@@ -662,7 +662,7 @@ function loaderAnim(){
     })
     gsap.to("#loader",{
         opacity: 0,
-        duration: 2
+        duration: 4
     })
 }
 
