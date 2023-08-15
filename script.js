@@ -645,7 +645,7 @@ function pagePin(){
         scrollTrigger:{
             trigger: "#page3",
             start: "top top",
-            end: "bottom -60%",
+            end: "bottom top",
             pin: true,
             scroller : "#main",
             // markers: true
