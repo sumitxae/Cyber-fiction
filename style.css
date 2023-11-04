@@ -7,6 +7,10 @@ html,body{
     height: 100%;
     width: 100%;
 }
+@font-face {
+    font-family: noto;
+    src: url(./Fonts/noto\ 1.ttf);
+}
 #main{
     background-color: #2C2C2C;
     position: relative;
